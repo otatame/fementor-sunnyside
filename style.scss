@@ -32,8 +32,79 @@ $fraunces: 'Fraunces', serif;
 body{
     padding: 0;
     margin: 0;
+    overflow-x: hidden ;
 }
 
 *{
     box-sizing: border-box;
+}
+
+main{
+
+    #hero{
+
+        #navbar{
+            position: absolute;
+            display: flex;
+            padding: 2rem 4rem;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            z-index: 999;
+
+            #list{
+                display: flex;
+                align-items: center;
+
+                .menuList{
+                    text-decoration: none;
+                    margin: 0 1.5rem;
+                    padding: 5px 0;
+                    font-family: $barlow;
+                    color: white;
+                    position: relative;
+                    
+                    
+                    &:nth-child(4){
+                        color: black;
+                        background: white;
+                        padding: 15px 1.7rem;
+                        margin-left: 1.4rem;
+                        font-size: .85rem;
+                        border-radius: 25px;
+                        font-family: $fraunces;
+                        text-transform: uppercase;
+                    }
+
+                    &::after{
+                        content: '';
+                        width: 0;
+                        height: 3px;
+                        background: white;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transition: all ease-in-out .3s;
+                    }
+
+                    &:hover::after{
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        #heroContent{
+            position: relative;
+
+            .content{
+                width: 100vw;
+                height: 100vh;
+                background: url('/images/desktop/image-header.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
 }
