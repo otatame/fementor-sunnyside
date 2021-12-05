@@ -1,0 +1,39 @@
+//colors
+//Primary
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$graphic: hsl(167, 40%, 24%);
+$photography: hsl(198, 62%, 26%);
+$footer: hsl(168, 34%, 41%);
+
+//Neutral
+$vdb: hsl(212, 27%, 19%);
+$vdg: hsl(213, 9%, 39%);
+$dgb: hsl(232, 10%, 55%);
+$gb: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+//media query
+$desktop: 1440px;
+$mobile: 375px;
+
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+//fonts
+$barlow: 'Barlow', sans-serif;
+$fraunces: 'Fraunces', serif;
+
+:root{
+    font-size: 18px;
+}
+
+*,
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
